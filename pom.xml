@@ -18,17 +18,21 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   
-  <plugins>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
         <plugin>
     <artifactId>maven-compiler-plugin</artifactId>
     <version>3.1</version>
     <configuration>
         <source>1.5</source>
         <target>1.5</target>
-        <useIncrementalCompilation>false</useIncrementalCompilation>
+        <useIncrementalCompilation>true</useIncrementalCompilation>
     </configuration>
 </plugin>
-  </plugins>
+      </plugins>
+    </pluginManagement>
+  </build>
   
   <dependencies>
     <dependency>

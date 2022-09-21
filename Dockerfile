@@ -2,9 +2,7 @@ FROM openjdk:11
 
 WORKDIR /usr/src/myapp
 
-COPY target/*.jar /usr/src/myapp/
-
-RUN cp -a dist/* /var/www/html/
+COPY target/*.jar /usr/bin/docker/
 
 EXPOSE 8080
 

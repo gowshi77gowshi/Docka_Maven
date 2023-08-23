@@ -10,7 +10,7 @@ pool:
 steps:
 - script: |
     # Build the Docker image
-    docker build -t my-docker-image:latest -f Docka_Maven/Dockerfile .
+    docker build -t my-docker-image:latest -f gowshi77gowshi/Docka_Maven/Dockerfile .
 
     # Check if the image was built successfully
     if [ $? -eq 0 ]; then
